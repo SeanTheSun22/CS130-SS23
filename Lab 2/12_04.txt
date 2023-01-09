@@ -1,0 +1,11 @@
+Northland,101
+Waitemata,574
+Auckland,391
+Counties Manukau,432
+Waikato,337
+Bay of Plenty,149
+Lakes,62
+Taranaki,21
+Hawke's Bay,101
+Taranaki,69
+Whanganui,43

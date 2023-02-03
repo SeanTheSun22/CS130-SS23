@@ -4,8 +4,8 @@ class Point:
     def __init__(self, x=0, y=0):
         self.x = x
         self.y = y
+
         distance = self.distance_from_zero()
-        
         if distance <= 1:
             self.score = 100
         elif distance <= 2:

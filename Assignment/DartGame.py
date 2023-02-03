@@ -45,14 +45,24 @@ class DartGame:
         print()
     
     def congratulate_player(self):
-        scores = (self.player1.get_total_score(), self.player2.get_total_score())
+        scores = (self.player1.get_total_score(), 
+                  self.player2.get_total_score())
+                  
         if scores[0] == scores[1]:
             congratulate_text = "It's a tie!"
         elif scores[0] > scores[1]:
-            congratulate_text = f"Congratulations! The winner is {self.player1.get_name()}."
+            congratulate_text = (f"Congratulations! The winner is "
+                                 f"{self.get_first_player_name()}.")
         else:
-            congratulate_text = f"Congratulations! The winner is {self.player2.get_name()}."
+            congratulate_text = (f"Congratulations! The winner is "
+                                 f"{self.get_second_player_name()}.")
         congratulate_border = "*" * len(congratulate_text)
-        print(congratulate_border, congratulate_text, congratulate_border, sep = "\n")
+
+        print(congratulate_border, 
+              congratulate_text, 
+              congratulate_border, 
+              sep = "\n")
         print()
-        print(self.player1, self.player2, sep = "\n")
+        print(self.player1, 
+              self.player2, 
+              sep = "\n")
